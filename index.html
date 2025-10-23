@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trackly - Smart Horse Racing Analytics</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Apply Inter font */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Style for the screenshot gallery images */
+        .app-screenshot {
+            width: 100%;
+            max-width: 300px; /* Max width for screenshots */
+            height: auto;
+            border-radius: 1.5rem; /* More pronounced rounded corners for phones */
+            border: 1px solid #e5e7eb; /* Light border */
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .app-screenshot:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <img 
+                    src="icon.jpg" 
+                    alt="Trackly App Icon" 
+                    class="h-10 w-10 rounded-full object-cover"
+                    onerror="this.src='https://placehold.co/100x100/28a745/ffffff?text=T'"
+                >
+                <span class="font-bold text-2xl text-gray-900">Trackly</span>
+            </div>
+            <div class="flex items-center space-x-2">
+                <a href="#features" class="text-gray-600 hover:text-green-700 px-3 py-2 rounded-md">Features</a>
+                <a href="#download" class="text-gray-600 hover:text-green-700 px-3 py-2 rounded-md">Data</a>
+                <a href="#get-app" class="bg-green-600 hover:bg-green-700 text-white font-medium px-4 py-2 rounded-lg transition-colors">Get App</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="container mx-auto px-6 py-24 text-center">
+            <img 
+                src="icon.jpg" 
+                alt="Trackly App Icon" 
+                class="h-32 w-32 rounded-3xl object-cover mx-auto mb-6 shadow-lg"
+                onerror="this.src='https://placehold.co/128x128/28a745/ffffff?text=Trackly'"
+            >
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                Smarter Horse Racing Analytics
+            </h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
+                Dive deep into racing data, analyze odds, and track performance with powerful, easy-to-use tools.
+            </p>
+            <div id="get-app" class="flex justify-center space-x-4">
+                <a href="#" class="bg-gray-900 text-white px-6 py-3 rounded-lg font-medium flex items-center space-x-2 hover:bg-gray-700 transition-colors">
+                    <!-- Apple Logo SVG -->
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 384 512"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 140.2 0 184.8 0 283.5c0 73.4 49.4 124.8 97.2 124.8 20.1 0 40.2-12.3 54.4-12.3 14.2 0 38.6 12.3 56.8 12.3 43.2 0 85.9-40.7 97.2-81.2-12.7-7.6-36.1-24.3-36.1-53.8zM2 372.4c1.1-12.2 4.6-23.7 9.8-34.6 19.3-40.3 49.3-70.1 87-81.2-1.2 2.6-2.3 5.3-3.3 8.1-15.6 44.5-3.3 95.8 36.1 123.8 21.6 15.7 44.3 16 44.3 16s.3 1.3 .7 1.9c.7 1 1.4 1.9 2.2 2.8 1.1 1.1 2.2 2.1 3.3 3.1 1.1 1 2.2 1.9 3.3 2.8 3.3 2.5 6.7 4.8 10.3 6.8 2 1.1 4.1 2.1 6.1 3 1.2 .5 2.4 1 3.6 1.5 3.3 1.3 6.6 2.5 10.1 3.5 1.2 .3 2.4 .6 3.6 .9 3.6 .8 7.2 1.5 10.9 2 1.2 .2 2.4 .3 3.6 .4 3.6 .4 7.2 .7 10.9 .8 1.2 .1 2.4 .1 3.6 .1 3.6 0 7.2-.1 10.9-.2 1.2-.1 2.4-.1 3.6-.2 3.6-.2 7.2-.5 10.9-.8 1.2-.1 2.4-.2 3.6-.3 3.6-.4 7.2-.9 10.9-1.4 1.2-.2 2.4-.3 3.6-.5 3.6-.7 7.2-1.5 10.8-2.3 1.2-.3 2.4-.5 3.6-.8 3.6-1 7.2-2.1 10.8-3.3 1.2-.4 2.4-.8 3.6-1.3 3.6-1.7 7.2-3.6 10.7-5.7 1.2-.7 2.4-1.4 3.6-2.2 3.6-2.7 7-5.7 10.3-8.8 1.1-1.1 2.2-2.1 3.3-3.2 1.1-1.1 2.2-2.2 3.3-3.3 1.1-1.1 2.2-2.3 3.3-3.5 1.1-1.2 2.2-2.5 3.3-3.8 1.1-1.3 2.2-2.6 3.3-4 1.1-1.4 2.2-2.8 3.3-4.3 1-1.5 2-3 3-4.5 1-1.6 2-3.2 2.9-4.8 1-1.7 1.9-3.4 2.8-5.1 1-1.8 1.9-3.7 2.8-5.6 1-1.9 1.9-3.9 2.7-5.8 .9-2 1.8-4.1 2.6-6.2 .8-2.1 1.6-4.2 2.4-6.4 .8-2.2 1.5-4.4 2.2-6.6 .7-2.2 1.4-4.5 2.1-6.8 .6-2.3 1.2-4.6 1.8-7 .5-2.4 1-4.8 1.5-7.3 .5-2.5 .9-5.1 1.2-7.6 .3-2.6 .6-5.2 .8-7.9 .2-2.6 .3-5.3 .3-7.9 0-2.7-.2-5.4-.3-8.1-.1-2.7-.3-5.4-.6-8.1-.2-2.7-.5-5.3-.8-8-.3-2.7-.7-5.4-1.1-8.1-.4-2.7-.9-5.4-1.4-8.1-.5-2.7-1.1-5.4-1.8-8.1-.6-2.7-1.3-5.4-2.1-8.1-.8-2.7-1.7-5.3-2.6-8-1-2.7-2-5.3-3.1-7.9-1.1-2.7-2.3-5.3-3.5-7.9-1.3-2.6-2.7-5.2-4.1-7.8-1.5-2.6-3-5.2-4.6-7.7-1.7-2.5-3.4-5-5.2-7.5-1.9-2.4-3.8-4.8-5.8-7.1-2-2.3-4.1-4.5-6.2-6.6-2.2-2.1-4.4-4.1-6.7-6-2.3-1.9-4.7-3.7-7.1-5.4-2.5-1.7-5-3.3-7.6-4.8-2.7-1.5-5.3-2.9-8.1-4.2-2.8-1.3-5.6-2.5-8.5-3.6-2.9-1.1-5.9-2-8.9-2.9-3-1-6.1-1.8-9.2-2.5-3.1-.7-6.2-1.3-9.4-1.8-3.2-.5-6.4-.8-9.7-1-3.3-.2-6.6-.3-10-.3s-6.7 .1-10 .3c-3.3 .2-6.5 .5-9.7 1-3.2 .5-6.3 1-9.4 1.8-3.1 .7-6.1 1.5-9.2 2.5-3 1-6 1.9-8.9 2.9-2.9 1.1-5.7 2.3-8.5 3.6-2.8 1.3-5.5 2.7-8.1 4.2-2.6 1.5-5.1 3.1-7.6 4.8-2.4 1.7-4.8 3.5-7.1 5.4-2.3 1.9-4.5 3.9-6.7 6-2.2 2.1-4.3 4.3-6.2 6.6-2 2.3-3.9 4.7-5.8 7.1-1.9 2.5-3.6 5-5.2 7.5-1.7 2.6-3.1 5.2-4.6 7.7-1.5 2.6-2.8 5.3-4.1 7.8-1.3 2.7-2.4 5.3-3.5 7.9-1.1 2.7-2.1 5.3-3.1 7.9-1 2.7-1.8 5.3-2.6 8-1 2.7-1.7 5.4-2.1 8.1-.6 2.7-1.1 5.4-1.8 8.1-.6 2.7-1.1 5.4-1.4 8.1-.4 2.7-.8 5.4-1.1 8.1-.3 2.7-.5 5.3-.8 8-.2 2.7-.3 5.3-.6 8.1-.1 2.7-.2 5.4-.3 8.1s0 5.4 .3 8.1c.1 2.7 .3 5.3 .6 7.9 .2 2.7 .5 5.3 .8 7.9 .3 2.7 .7 5.3 1.1 8 .4 2.7 .9 5.3 1.4 8 .5 2.7 1.1 5.3 1.8 8 .6 2.7 1.3 5.3 2.1 8 .8 2.7 1.7 5.3 2.6 8 1 2.6 2 5.2 3.1 7.8 1.1 2.6 2.3 5.2 3.5 7.7 1.3 2.5 2.7 5 4.1 7.5 1.5 2.4 3 4.8 4.6 7.1 1.7 2.3 3.4 4.5 5.2 6.6 1.9 2.1 3.8 4.1 5.8 6 2 1.9 4.1 3.7 6.2 5.4 2.2 1.7 4.4 3.3 6.7 4.8 2.3 1.5 4.7 2.9 7.1 4.2 2.5 1.3 5 2.5 7.6 3.6 2.7 1.1 5.3 2.1 8.1 3 2.8 .9 5.6 1.7 8.5 2.4 2.9 .7 5.9 1.4 8.9 1.9 3 .5 6.1 .9 9.2 1.2 3.1 .3 6.2 .5 9.4 .6 3.2 .1 6.4 .1 9.7 .1s6.5 0 9.7-.1c3.3-.1 6.5-.3 9.7-.6 3.1-.3 6.2-.7 9.2-1.2 3-.5 6-1.1 8.9-1.9 2.9-.7 5.7-1.5 8.5-2.4 2.8-.9 5.5-1.8 8.1-3 2.6-1.1 5.2-2.3 7.6-3.6 2.4-1.3 4.8-2.6 7.1-4.2 2.3-1.5 4.5-3.1 6.7-4.8 2.2-1.7 4.2-3.5 6.2-5.4 2-1.9 3.9-3.9 5.8-6 1.9-2.1 3.6-4.3 5.2-6.6 1.7-2.3 3.1-4.7 4.6-7.1 1.5-2.4 2.8-4.9 4.1-7.5 1.3-2.6 2.4-5.2 3.5-7.7 1.1-2.6 2.1-5.2 3.1-7.8 1-2.6 1.8-5.3 2.6-8 1-2.7 1.7-5.4 2.1-8.1 .6-2.7 1.1-5.4 1.8-8.1 .6-2.7 1.1-5.4 1.4-8 .4-2.7 .8-5.3 1.1-8 .3-2.7 .5-5.3 .8-8 .2-2.6 .3-5.2 .6-7.9 .1-2.7 .2-5.3 .3-8.1z"/>
+                    </svg>
+                    <span>Download on the<br><span class="font-bold text-lg">App Store</span></span>
+                </a>
+                <a href="#" class="bg-gray-900 text-white px-6 py-3 rounded-lg font-medium flex items-center space-x-2 hover:bg-gray-700 transition-colors">
+                    <!-- Google Play Logo SVG -->
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 512 512"><path d="M325.3 234.3L104.6 13l280.8 161.2-59.9 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-59.1L85.4 48l384.2 223.8c11.2 6.4 17.2 18.2 17.2 30.1s-6 23.7-17.2 30.1l-384.2 223.8 58.9-59.1 240.7-138.6z"/>
+                    </svg>
+                    <span>GET IT ON<br><span class="font-bold text-lg">Google Play</span></span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Features (Screenshot Gallery) -->
+        <section id="features" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                        All Your Analytics in One Place
+                    </h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                        From pre-race predictions to post-race analysis, Trackly has you covered.
+                    </p>
+                </div>
+                
+                <!-- Responsive Screenshot Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 justify-items-center">
+                    
+                    <!-- Screenshot 1 -->
+                    <img src="screen_01.png" alt="App Screenshot 1 - Race List" class="app-screenshot"
+                         onerror="this.src='https://placehold.co/300x550/eeeeee/333333?text=Race+List'">
+                    
+                    <!-- Screenshot 2 -->
+                    <img src="screen_02.png" alt="App Screenshot 2 - Feature Selection" class="app-screenshot"
+                         onerror="this.src='https://placehold.co/300x550/eeeeee/333333?text=Feature+Selection'">
+                    
+                    <!-- Screenshot 3 -->
+                    <img src="screen_03.png" alt="App Screenshot 3 - Odds Chart" class="app-screenshot"
+                         onerror="this.src='https://placehold.co/300x550/eeeeee/333333?text=Odds+Chart'">
+                    
+                    <!-- Screenshot 4 -->
+                    <img src="screen_04.png" alt="App Screenshot 4 - Bet Analysis" class="app-screenshot"
+                         onerror="this.src='https://placehold.co/300x550/eeeeee/333333?text=Bet+Analysis'">
+                    
+                    <!-- Screenshot 5 -->
+                    <img src="screen_05.png" alt="App Screenshot 5 - Results Summary" class="app-screenshot"
+                         onerror="this.src='https://placehold.co/300x550/eeeeee/333333?text=Results+Summary'">
+                    
+                    <!-- Screenshot 6 -->
+                    <img src="screen_06.png" alt="App Screenshot 6 - Race Report" class="app-screenshot"
+                         onerror="this.src='https://placehold.co/300x550/eeeeee/333333?text=Race+Report'">
+                </div>
+            </div>
+        </section>
+
+        <!-- Data Download Section -->
+        <section id="download" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Download Historical Data
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
+                    Access our complete history data to build and test your own models.
+                </p>
+                <a 
+                    href="https://rcwkan.github.io/trackly-history-data/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="bg-green-600 hover:bg-green-700 text-white font-medium px-8 py-4 rounded-lg text-lg transition-colors inline-flex items-center space-x-2"
+                >
+                    <!-- Download Icon SVG -->
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 512 512"><path d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24z"/></svg>
+                    <span>Go to Data Repository</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-400 py-12">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Trackly. All rights reserved.</p>
+            <p class="text-sm mt-2">Disclaimer: For entertainment and informational purposes only.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
